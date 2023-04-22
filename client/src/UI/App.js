@@ -1,4 +1,5 @@
 import React from 'react'
+import ListGroup from './LeftList';
 import SearchBar from './LogoSearch';
 import ClassComponent from './class';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -16,7 +17,16 @@ const App = () => {
         marginRight: '5%'
         };
 
-    return (
+    return 
+        <>
+            <div>
+                <h1>StudyHub</h1>
+            </div>
+
+            <div>
+                <ListGroup/>
+            </div>
+        </>
       <div>
         <SearchBar />
         <div className="card-container" style={cardContainerStyles}>
