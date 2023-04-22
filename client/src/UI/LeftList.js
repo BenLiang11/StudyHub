@@ -5,7 +5,7 @@ function ListGroup() {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
-    <div style={{width : '20%', marginLeft : '1%'}}>
+    <div style={{marginLeft : '1%'}}>
       <h1 className="text-center">Department</h1>
       {Department.length === 0 && <p>No departments found</p>}
       <ul className="list-group">

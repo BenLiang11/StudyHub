@@ -9,51 +9,56 @@ const App = () => {
     const cardContainerStyles={
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
+        justifyContent: 'space-between', 
+        marginTop:'3%'
+        };
+
+    const midSection={
         margin: '0 -5px',
         width: '70%',
         marginLeft: 'auto',
-        marginTop: '10%', 
+        marginTop: '5%', 
         marginRight: '5%'
         };
 
-    return 
-        <>
+        return (
             <div>
-                <h1>StudyHub</h1>
+              <SearchBar />
+              <div style={{display: 'flex'}}>
+                <div style={{marginTop: '5%', marginLeft:"1%"}}>
+                  <ListGroup/>
+                </div>
+                <div style={midSection}>
+                    <h1>
+                        Courses
+                    </h1>
+                    <div className="card-container" style={cardContainerStyles}>
+                    {/*
+                    Prob do something like:
+            
+                    for class in classList:
+                        create ClassComponent with course Name and courseTitle
+            
+                    */}
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    </div>
+
+                </div>
+                
+              </div>
             </div>
-
-            <div>
-                <ListGroup/>
-            </div>
-        </>
-      <div>
-        <SearchBar />
-        <div className="card-container" style={cardContainerStyles}>
-
-        {/*
-        Prob do something like:
-
-        for class in classList:
-            create ClassComponent with course Name and courseTitle
-        
-        */}
-
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-          <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        </div>
-      </div>
-    );
-  }
+          );
+        }
 
 export default App;
