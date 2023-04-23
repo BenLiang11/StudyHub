@@ -6,7 +6,7 @@ function ListGroup() {
 
   return (
     <div style={{marginLeft : '1%'}}>
-      <h1 className="text-center">Department</h1>
+      <h1 className="text-center" style={{marginBottom: '16%'}}>Department</h1>
       {Department.length === 0 && <p>No departments found</p>}
       <ul className="list-group">
         {Department.map((item, index) => (
