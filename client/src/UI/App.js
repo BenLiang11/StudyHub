@@ -26,7 +26,7 @@ const App = () => {
               <SearchBar />
               <div style={{display: 'flex'}}>
                 <div style={{marginTop: '5%', marginLeft:"1%"}}>
-                  <ListGroup/>
+                  <ListGroup/>  
                 </div>
                 <div style={midSection}>
                     <h1>
