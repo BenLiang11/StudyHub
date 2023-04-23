@@ -13,11 +13,10 @@ function ClassComponent(props){
 
     return (
     <div class="card " style={cardStyle}>
-    <img class="card-img-top" src={require('../imgs/engrbackground.jpg')} alt="Card image cap"/>
     <div class="card-body">
       <h5 class="card-title">{courseName}</h5>
         <p class="card-text">{courseTitle}</p>
-      <a href="#" class="btn btn-primary">Find People</a>
+      <a href="#" class="btn btn-primary">View Students</a>
     </div>
   </div>);
 }
