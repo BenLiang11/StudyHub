@@ -12,11 +12,11 @@ import { getCourses } from '../index.js';
 
 const App = () => {
 
-    // const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
-    // useEffect(()=> {
-    //   dispatch(getCourses);
-    // }, [dispatch]);
+    useEffect(()=> {
+      dispatch(getCourses);
+    }, [dispatch]);
 
     const cardContainerStyles={
         display: 'flex',

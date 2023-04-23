@@ -7,10 +7,10 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 
-app.use('/courses', postRoutes);
-
 app.use(cors());
 app.use(express.json());
+
+app.use('/courses', postRoutes);
 
 // Connect to MongoDB
 dotenv.config();
