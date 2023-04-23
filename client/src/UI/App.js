@@ -2,6 +2,7 @@ import React from 'react'
 import ListGroup from './LeftList';
 import SearchBar from './LogoSearch';
 import ClassComponent from './class';
+import Calendar from './Schedule';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const App = () => {
