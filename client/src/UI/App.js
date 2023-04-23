@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import ListGroup from './LeftList';
 import SearchBar from './LogoSearch';
 import ClassComponent from './class';
-
+import Calendar from './Schedule';
 import Student from './Students';
 import Classes from './classes';
 import 'bootstrap/dist/css/bootstrap.css';
