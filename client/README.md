@@ -1,7 +1,7 @@
-#Study Hub
+# Study Hub
 This is our frontend implementation for Study Hub. Built using React and Node.js. It is designed to allow students who are taking the same class to join each other in study rooms.
 
-##Key Features
+## Key Features
 - Sign up to add your classes
 - Multiple study rooms to join
 - Interact and plan study times with other students
