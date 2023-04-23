@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid, CircularProgress } from '@material-ui/core';
 import { useSelector } from "react-redux";
 
 import ClassComponent from "./class";
@@ -8,22 +9,7 @@ const Classes = () => {
 
     console.log(courses);
 
-    return(
-    <>
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-    </>
-    );
+    return;
 }
 
 export default Classes;

@@ -1,5 +1,8 @@
 import react from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+import {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
+
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -28,11 +31,16 @@ const reducers = combineReducers({ courses });
 //Store
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+    <StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </StrictMode>
+);
 
 //getCourses
 export const getCourses = () => async(dispatch) => {
