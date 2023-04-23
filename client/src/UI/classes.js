@@ -8,22 +8,41 @@ const Classes = () => {
 
     console.log(courses);
 
-    return(
-    <>
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-        <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-    </>
-    );
+    const classList = [
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+        { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+        { courseName: "MATH-3", courseTitle: "Calculus" },
+        { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }
+      ];
+      
+    const classComponents = classList.map((classObj) => (
+    <ClassComponent
+        courseName={classObj.courseName}
+        courseTitle={classObj.courseTitle}
+    />
+    ));
+
+    return classComponents;
 }
 
 export default Classes;
