@@ -8,8 +8,8 @@ function SearchBar(){
                     <span>StudyHub</span>
                 </div>
                 <input className="SearchBar" placeholder="Search" style={{ width: '50%', borderRadius: '25px', fontSize:"35px",  marginRight: '5%'}} />
-                <button class="btn btn-primary Log In" style={{ height: '1%', width: '5%', borderRadius: '20px', fontSize: 'initial', marginRight: '1%'}}> Log In</button>
-                <button className="btn btn-primary Sign Up" style={{ height: '1%', width: '6%', borderRadius: '20px', fontSize: 'initial'}}>Sign Up</button>
+                <a href="https://cdn.discordapp.com/attachments/1095409925959733350/1099483502984056862/IMG_1485.png" class="btn btn-primary Log In" style={{ height: '1%', width: '5%', borderRadius: '20px', fontSize: 'initial', marginRight: '1%'}}> Log In</a>
+                <a href="https://cdn.discordapp.com/attachments/1095409925959733350/1099484256914387044/IMG_1486.png" className="btn btn-primary Sign Up" style={{ height: '1%', width: '6%', borderRadius: '20px', fontSize: 'initial'}}>Sign Up</a>
             </h1>
         </div>
     );
