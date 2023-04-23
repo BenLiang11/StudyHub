@@ -21,6 +21,40 @@ const App = () => {
         marginRight: '5%'
         };
 
+        const classList = [
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: " PHYS-4", courseTitle: "Classical Mechanics" }, 
+            { courseName: "ENGR-2", courseTitle: "Technology and Society" },
+            { courseName: "MATH-3", courseTitle: "Calculus" },
+            { courseName: "PHYS-4", courseTitle: "Classical Mechanics" }
+          ];
+          
+        const classComponents = classList.map((classObj) => (
+        <ClassComponent
+            courseName={classObj.courseName}
+            courseTitle={classObj.courseTitle}
+        />
+        ));
+
         return (
             <div>
               <SearchBar />
@@ -33,25 +67,7 @@ const App = () => {
                         Courses
                     </h1>
                     <div className="card-container" style={cardContainerStyles}>
-                    {/*
-                    Prob do something like:
-            
-                    for class in classList:
-                        create ClassComponent with course Name and courseTitle
-            
-                    */}
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
-                    <ClassComponent courseName="ENGR-2" courseTitle="Technology and Society" />
+                    {classComponents}
                     </div>
 
                 </div>
