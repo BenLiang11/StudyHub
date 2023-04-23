@@ -2,12 +2,21 @@ import React from 'react'
 import ListGroup from './LeftList';
 import SearchBar from './LogoSearch';
 import ClassComponent from './class';
+import Student from './Students';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const App = () => {
 
     const cardContainerStyles={
         display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between', 
+        marginTop:'3%'
+        };
+        
+    const studentContainerStyles={
+        display: 'flex',
+        flexDirection: 'column',
         flexWrap: 'wrap',
         justifyContent: 'space-between', 
         marginTop:'3%'
@@ -55,6 +64,31 @@ const App = () => {
         />
         ));
 
+        const StudentList = [
+            { name: "Ben Liang", description: "2nd year CS Major" }, 
+            { name: "Jack Lee", description: "2nd year CS Major" }, 
+            { name: "Oscar Zheng", description: "2nd year CS Major" }, 
+            { name: "Samantha Li", description: "2nd year BioSci Major" }, 
+            { name: "Jacky Hoang", description: "2nd year Business Economics Major" }, 
+            { name: "Ben Liang", description: "2nd year CS Major" }, 
+            { name: "Jack Lee", description: "2nd year CS Major" }, 
+            { name: "Oscar Zheng", description: "2nd year CS Major" }, 
+            { name: "Samantha Li", description: "2nd year BioSci Major" }, 
+            { name: "Jacky Hoang", description: "2nd year Business Economics Major" }, 
+            { name: "Ben Liang", description: "2nd year CS Major" }, 
+            { name: "Jack Lee", description: "2nd year CS Major" }, 
+            { name: "Oscar Zheng", description: "2nd year CS Major" }, 
+            { name: "Samantha Li", description: "2nd year BioSci Major" }, 
+            { name: "Jacky Hoang", description: "2nd year Business Economics Major" }
+          ];
+          
+        const AllStudents = StudentList.map((studentObj) => (
+        <Student
+            name={studentObj.name}
+            description={studentObj.description}
+        />
+        ));
+
         return (
             <div>
               <SearchBar />
@@ -69,6 +103,13 @@ const App = () => {
                     <div className="card-container" style={cardContainerStyles}>
                     {classComponents}
                     </div>
+
+                    {/* <h1>
+                        Students
+                    </h1>
+                    <div className="students-container" style={studentContainerStyles}>
+                        {AllStudents}
+                    </div> */}
 
                 </div>
                 
