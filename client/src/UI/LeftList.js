@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ListGroup() {
-  let Department = ["CSE", "MATH", "HUM", "BENG", "COGS"];
+  let Department = ["CSE", "MATH", "HUM", "BENG", "COGS", "CSE", "MATH", "HUM", "BENG", "COGS", "CSE", "MATH", "HUM", "BENG", "COGS"];
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (

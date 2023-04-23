@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function ClassComponent(props){
 
     const cardStyle = {

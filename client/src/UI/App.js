@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ListGroup from './LeftList';
 import SearchBar from './LogoSearch';
 import ClassComponent from './class';
+
 import Student from './Students';
+import Classes from './classes';
 import 'bootstrap/dist/css/bootstrap.css';
 
+import { useDispatch } from 'react-redux';
+import { getCourses } from '../index.js';
+
 const App = () => {
+
+    // const dispatch = useDispatch;
+
+    // useEffect(()=> {
+    //   dispatch(getCourses);
+    // }, [dispatch]);
 
     const cardContainerStyles={
         display: 'flex',
@@ -101,7 +112,18 @@ const App = () => {
                         Courses
                     </h1>
                     <div className="card-container" style={cardContainerStyles}>
+
                     {classComponents}
+                    {/*
+                    Prob do something like:
+            
+                    for class in classList:
+                        create ClassComponent with course Name and courseTitle
+            
+                    */}
+                      <>
+                        <Classes/>
+                      </>
                     </div>
 
                     {/* <h1>
