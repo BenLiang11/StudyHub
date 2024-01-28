@@ -1,6 +1,7 @@
 # StudyHub
 
 Welcome to the StudyHub App! This application allows college students to create and manage study sessions with fellow students that are taking the same class.
+
 ---
 
 ## Key Features
